@@ -1,0 +1,211 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#0f172a;
+  color:white;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 50px;
+  background:#111827;
+  position:sticky;
+  top:0;
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#a855f7;
+}
+
+nav ul{
+  display:flex;
+  list-style:none;
+}
+
+nav ul li{
+  margin-left:25px;
+}
+
+nav ul li a{
+  color:white;
+  text-decoration:none;
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:20px;
+  background:linear-gradient(to right,#0f172a,#1e1b4b);
+}
+
+.hero h1{
+  font-size:60px;
+}
+
+.hero h2{
+  margin-top:15px;
+  color:#a855f7;
+}
+
+.hero p{
+  margin-top:20px;
+  font-size:20px;
+  line-height:30px;
+}
+
+.hero-buttons button{
+  margin:20px 10px;
+}
+
+button{
+  padding:12px 25px;
+  border:none;
+  border-radius:8px;
+  background:#a855f7;
+  color:white;
+  cursor:pointer;
+  transition:0.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+}
+
+.whatsapp-btn{
+  background:#22c55e;
+}
+
+section{
+  padding:80px 20px;
+  text-align:center;
+}
+
+section h2{
+  margin-bottom:30px;
+  font-size:40px;
+}
+
+.skill-container,
+.service-container,
+.portfolio-container,
+.why-container,
+.process-container,
+.pricing-container,
+.faq-container,
+.testimonial-container{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:20px;
+}
+
+.skill-card,
+.service-card,
+.portfolio-card,
+.why-card,
+.process-card,
+.price-card,
+.faq-card,
+.testimonial-card,
+.faq-card{
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+  width:300px;
+  transition:0.3s;
+}
+
+.skill-card:hover,
+.service-card:hover,
+.portfolio-card:hover,
+.why-card:hover,
+.process-card:hover,
+.price-card:hover,
+.testimonial-card:hover{
+  transform:translateY(-10px);
+}
+
+.portfolio-card img{
+  width:100%;
+  border-radius:10px;
+  margin-bottom:15px;
+}
+
+.textcontact{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.contact input,
+.contact textarea{
+  width:320px;
+  padding:8px;
+  margin:10px;
+  border:none;
+  border-radius:8px;
+  
+}
+
+.contact textarea{
+  height:120px;
+  resize: none;
+}
+
+footer{
+  background:#111827;
+  text-align:center;
+  padding:30px;
+}
+
+.floating-whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#22c55e;
+  color:white;
+  width:60px;
+  height:60px;
+  border-radius:50%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:30px;
+  text-decoration:none;
+}
+
+@media(max-width:768px){
+
+  nav{
+    flex-direction:column;
+  }
+
+  nav ul{
+    margin-top:15px;
+  }
+
+  .hero h1{
+    font-size:40px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+}
